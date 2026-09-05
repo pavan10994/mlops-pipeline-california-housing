@@ -1,0 +1,78 @@
+[2026-09-05 12:36:55,917: INFO: <string>: Logging setup complete!]
+[2026-09-05 12:43:01,271: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-09-05 12:43:01,273: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-09-05 12:43:01,276: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-09-05 12:43:01,277: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-09-05 12:43:01,278: INFO: common: created directory at: artifacts]
+[2026-09-05 12:43:01,279: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-09-05 12:43:02,529: INFO: data_ingestion: artifacts/data_ingestion/housing.csv downloaded with following info:
+Connection: close
+Content-Length: 1423529
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: text/plain; charset=utf-8
+ETag: "fdba56aea067f8f42209e825c909a1b87d5969efc9e4563c11d11fc92f0e70bd"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D996:9BF4D:32F6AA:61F18C:6A9C4695
+x-github-edge-region: iad
+Accept-Ranges: bytes
+Date: Sat, 05 Sep 2026 16:43:02 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bos-kbos510040-BOS
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1788626582.084242,VS0,VE114
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3ebcc07629ec450b2bdde95d3dfae18c301e2362
+Expires: Sat, 05 Sep 2026 16:48:02 GMT
+Source-Age: 0
+
+]
+[2026-09-05 12:43:02,530: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-09-05 12:48:26,891: INFO: stage_02_data_validation: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-09-05 12:48:26,894: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-09-05 12:48:26,898: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-09-05 12:48:26,900: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-09-05 12:48:26,901: INFO: common: created directory at: artifacts]
+[2026-09-05 12:48:26,902: INFO: common: created directory at: artifacts/data_validation]
+[2026-09-05 12:48:27,046: INFO: stage_02_data_validation: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-09-05 12:54:02,011: INFO: stage_03_data_transformation: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-09-05 12:54:02,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-09-05 12:54:02,016: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-09-05 12:54:02,017: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-09-05 12:54:02,019: INFO: common: created directory at: artifacts]
+[2026-09-05 12:54:02,020: INFO: common: created directory at: artifacts/data_transformation]
+[2026-09-05 12:54:02,251: INFO: data_transformation: Splitted data into training and test sets]
+[2026-09-05 12:54:02,252: INFO: data_transformation: Train shape: (15324, 13), Test shape: (5109, 13)]
+[2026-09-05 12:54:02,253: INFO: stage_03_data_transformation: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-09-05 12:54:42,567: INFO: stage_04_model_trainer: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-09-05 12:54:42,570: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-09-05 12:54:42,573: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-09-05 12:54:42,574: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-09-05 12:54:42,576: INFO: common: created directory at: artifacts]
+[2026-09-05 12:54:42,577: INFO: common: created directory at: artifacts/model_trainer]
+[2026-09-05 12:54:43,899: INFO: model_trainer: Model saved at artifacts/model_trainer\model.joblib]
+[2026-09-05 12:54:43,899: INFO: stage_04_model_trainer: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-09-05 13:12:47,509: INFO: stage_05_model_evaluation: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2026-09-05 13:12:47,515: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-09-05 13:12:47,520: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-09-05 13:12:47,525: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-09-05 13:12:47,527: INFO: common: created directory at: artifacts]
+[2026-09-05 13:12:47,529: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-09-05 13:12:50,675: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2026-09-05 13:13:11,792: INFO: stage_05_model_evaluation: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
