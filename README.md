@@ -130,22 +130,22 @@ Export your environment variables so MLflow can send metrics and artifacts direc
 
 **Windows (PowerShell):**
 ```powershell
-$env:MLFLOW_TRACKING_URI="[https://dagshub.com/pavan10994/mlops-pipeline-california-housing.mlflow](https://dagshub.com/pavan10994/mlops-pipeline-california-housing.mlflow)"
-$env:MLFLOW_TRACKING_USERNAME="pavan10994"
+$env:MLFLOW_TRACKING_URI="your mlflow tracking url)"
+$env:MLFLOW_TRACKING_USERNAME="UserName"
 $env:MLFLOW_TRACKING_PASSWORD="YOUR_DAGSHUB_TOKEN"
 ```
 
 **Windows (CMD):**
 ```cmd
-set MLFLOW_TRACKING_URI=[https://dagshub.com/pavan10994/mlops-pipeline-california-housing.mlflow](https://dagshub.com/pavan10994/mlops-pipeline-california-housing.mlflow)
-set MLFLOW_TRACKING_USERNAME=pavan10994
+set MLFLOW_TRACKING_URI=[tracking url)
+set MLFLOW_TRACKING_USERNAME=username
 set MLFLOW_TRACKING_PASSWORD=YOUR_DAGSHUB_TOKEN
 ```
 
 **Linux / macOS / Git Bash:**
 ```bash
-export MLFLOW_TRACKING_URI="[https://dagshub.com/pavan10994/mlops-pipeline-california-housing.mlflow](https://dagshub.com/pavan10994/mlops-pipeline-california-housing.mlflow)"
-export MLFLOW_TRACKING_USERNAME="pavan10994"
+export MLFLOW_TRACKING_URI="[tracking url )"
+export MLFLOW_TRACKING_USERNAME="your username"
 export MLFLOW_TRACKING_PASSWORD="YOUR_DAGSHUB_TOKEN"
 ```
 
